@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <style>
+        .button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 8px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+}
+    </style>
+</head>
+<body>
+<div class="header">
+
+<h1 style="text-align: center;color: blue;font-weight: bold">Review Scrapper</h1>
+</div>
+<div class="form_class" align="center">
+<form action="/scraper" method="POST">
+    <table>
+        <tr><td> <label>Enter the mobile name:</label></td><td><input type="text" name="query" placeholder="Enter the mobile name" required/></td></tr>
+        <tr><td><label>Enter the number of reviews you want to search:</label></td><td><input type="number" name="totalnum"/></td></tr>
+        <tr> <td colspan="2" style="text-align: center">   <input type="submit" class="button"></td></tr>
+    </table>
+</form>
+</div>
+{% block content %}
+
+{% endblock %}
+
+</body>
+</html>

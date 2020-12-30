@@ -1,0 +1,15 @@
+{% extends "index.html" %}
+{% block content %}
+<table border="solid 2px" style="text-align: center">
+    <tr><td style="font-weight: bold">Star</td><td style="text-align: center;font-weight: bold">Review</td><td style="text-align: center;width:10%;font-weight: bold" >Customer Name</td><td style="font-weight: bold">Likes</td><td style="font-weight: bold">Dislikes</td></tr>
+{% for i in reviews %}
+ <tr>
+     <td style="text-align: center">{{i['star']}}</td>
+     <td style="text-align: center">{{i['review']}}</td>
+     <td style="text-align: center">{{i['cust_name']}}</td>
+     <td style="text-align: center">{{i['likes']}}</td>
+     <td style="text-align: center">{{i['dislikes']}}</td>
+ </tr>
+{% endfor %}
+</table>
+{% endblock %}
