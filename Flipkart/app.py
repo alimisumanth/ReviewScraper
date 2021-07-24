@@ -31,7 +31,7 @@ def scrapper():
             url_html = urlopen(url).read()
             bs_data = bs(url_html, 'html.parser')
             res = bs_data.find_all('div', {"class": "_1AtVbE col-12-12"})
-            k = res[-3].find_all('a')[-1]
+            k = res[-4].find_all('a')[-1]
        except:
            return "Please Verify the product name"
 
